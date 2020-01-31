@@ -3,14 +3,14 @@ import { Link } from 'react-router-dom'
 import { connect } from 'react-redux'
 import { auth } from '../../firebase/firebase.utils'
 
-import { ReactComponent as Logo } from '../../assets/crown.svg'
+import Logo  from '../../images/logo2.png'
 import './header.styles.scss'
 
 const Header = ({currentUser}) => (
 
     <div className="header">
         <Link className="logo-container" to="/">
-           <h1 className="logo-text">LIVE MY FAITH <Logo/></h1>
+           <img className='logo-text' alt="Logo" height="115px" width="300px" src={Logo}/>
         </Link>
 
         <div className="options">
