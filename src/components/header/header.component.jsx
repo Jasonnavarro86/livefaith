@@ -16,7 +16,8 @@ const Header = ({ currentUser, hidden }) => (
 
     <div className="header">
         <Link className="logo-container" to="/">
-            <img className='logo-text' alt="Logo" height="115px" width="300px" src={Logo} />
+            {/*<img className='logo-text' alt="Logo" height="115px" width="300px" src={Logo} />*/}
+            <img className="logo-text" alt="Logo" height="85px" width="240px" style={ { marginTop: '10px' } } src={ Logo } />
         </Link>
 
         <div className="options">
