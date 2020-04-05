@@ -1,7 +1,13 @@
 import React from 'react';
-import { Switch, Route, Redirect } from 'react-router-dom';
+import {
+    Switch,
+    Route,
+    Redirect
+} from 'react-router-dom';
+import { ThemeProvider } from '@material-ui/styles';
 import { connect } from 'react-redux'
 import { createStructuredSelector } from "reselect";
+import theme from "./theme";
 import './App.css';
 
 import HomePage from './pages/homepage/homepage.component';
@@ -45,7 +51,7 @@ class App extends React.Component {
 
   render() {
     return (
-      <div>
+        <ThemeProvider theme={ theme }>
         <Header />
         <Switch>
           <Route exact path='/' component={HomePage} />
@@ -63,7 +69,7 @@ class App extends React.Component {
               } />
 
         </Switch>
-      </div>
+        </ThemeProvider>
     );
   }
 }
