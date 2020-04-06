@@ -12,7 +12,7 @@ import App from './App';
 ReactDOM.render(
     <Provider store={store}>
      <BrowserRouter>
-       <PersistGate persistor={ persistor }>
+       <PersistGate loading={ false } persistor={ persistor }>
          <App />
        </PersistGate>
      </BrowserRouter>
