@@ -92,8 +92,7 @@ const ContentLayout = ( ) => {
                     <CustomLeftGridItem item sm={12} lg={6}>
                         <div className={ classes.smallContainer }>
                         <h1 className={ classes.h1 }>A resource for daily discipline.</h1>
-                        <h3 className={ classes.subheader }>Live Faith is a Online Resource made just for you. Checkout our VLOG for inspiration,
-                          . </h3>
+                        <h3 className={ classes.subheader }>Live Faith is a Online Resource made just for you. Checkout our VLOG for the latest episode. </h3>
                         <Button className={ classes.button }>
                             View on YouTube
                         </Button>
